@@ -87,7 +87,7 @@ function buildDeck() {
             - Call the createdCardImage() function and assign the return img element to a variable named image
             - Set the id attribute of the image to `${face}_of_${suit}.png`
             - Use the .push method to push a new PlayingCard object into the deck array
-            - Do the .push and object creation in a signle statement
+            - Do the .push and object creation in a single statement
             */
 
             // your code goes here (remove this comment once you have added your code)
@@ -106,7 +106,7 @@ const actions = document.querySelector('#actions')
 const shuffleBtn = document.querySelector('#shuffle')
 const removeBtn = document.querySelector('#remove')
 const newDeckBtn = document.querySelector('#newdeck')
-const showFaacesBtn = document.querySelector('#showfaces')
+const showFacesBtn = document.querySelector('#showfaces')
 const showBacksBtn = document.querySelector('#showbacks')
 
 shuffleBtn.addEventListener('click', () => {
@@ -132,7 +132,7 @@ newDeckBtn.addEventListener('click', () => {
     setTimeout(clearActions, 5000)
 })
 
-showFaacesBtn.addEventListener('click', () => {
+showFacesBtn.addEventListener('click', () => {
     actions.innerHTML = 'All card faces are now showing.'
     deck.forEach(card => {
         card.showFaces()
